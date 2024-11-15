@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | School Pullemin</title>
+    <title>Unity WebGL Player | Zombie Slug</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">School Pullemin</div>
+        <div id="unity-build-title">Zombie Slug</div>
       </div>
     </div>
     <script>
@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/zombieSlugV2.loader.js";
+      var loaderUrl = buildUrl + "/zombieSlugV3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/zombieSlugV2.data",
-        frameworkUrl: buildUrl + "/zombieSlugV2.framework.js",
-        codeUrl: buildUrl + "/zombieSlugV2.wasm",
+        dataUrl: buildUrl + "/zombieSlugV3.data",
+        frameworkUrl: buildUrl + "/zombieSlugV3.framework.js",
+        codeUrl: buildUrl + "/zombieSlugV3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Digit Keys",
-        productName: "School Pullemin",
-        productVersion: "1.0",
+        productName: "Zombie Slug",
+        productVersion: "0.2.1",
         showBanner: unityShowBanner,
       };
 
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
